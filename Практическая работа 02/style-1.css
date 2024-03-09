@@ -1,0 +1,11 @@
+
+html {
+    background-image: url("image/mosaic.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    backdrop-filter: blur(5px);
+} 
+  
+
+
