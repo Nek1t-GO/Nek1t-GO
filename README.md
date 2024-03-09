@@ -10,3 +10,6 @@ git clone URL_репозитория
 git clone https://github.com/Nek1t-GO/Laba-1.git
 cd имя_директории_репозитория
 git pull origin ваша_ветка
+
+git pull origin main
+
