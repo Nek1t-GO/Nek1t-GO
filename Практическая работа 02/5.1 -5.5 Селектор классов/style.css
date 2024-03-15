@@ -1,0 +1,72 @@
+/* 5.1 Селектор классов */
+.b-blue { background: blue; } 
+
+/* 5.2. Комбинированные правила */
+.myBox {
+	width: 50px;
+	height: 50px;
+	/* padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 190px;
+	padding-bottom: 50px;  */
+    padding: 10px 30px 50px 190px;
+    
+    /* background: rgb(189, 189, 189);
+	background-image: url(https://cdn.fishki.net/upload/post/2018/01/06/2476212/3-00.jpg?raw=true);
+	background-position-x: 100px;
+	background-repeat: no-repeat;
+	background-size: contain;  */
+    background: rgb(189, 189, 189) url(https://cdn.fishki.net/upload/post/2018/01/06/2476212/3-00.jpg?raw=true) no-repeat 100px/contain;
+}
+
+/* 5.3. Применить несколько классов */
+.card {
+	width: 150px;
+	height: 240px;
+	border: 1px solid black;
+	text-align: center;
+	line-height: 240px;
+	border-radius: 5px;
+	font-size: 1.5rem;
+}
+.card:after {
+	font-size: 80%;
+	font-weight: bold;
+}
+
+.spades,
+.spades:after {
+	content: "♤";
+	color: black;
+	font-size: 3px;
+}
+
+.heart,
+.heart:after {
+	content: "9♡";
+	color: red;
+	font-size: 3rem; 
+}
+
+/* 5.4. ID CSS-селектор */
+#button1 {
+	background-color: #4caf50; /* Green */
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+/* 5.5. Специализация */
+ul li {
+	background: blue;
+}
+
+li + #thirditem {
+	background: yellow;
+}
+/**** Не изменять выше этой линии. Добавлять ниже. ****/
+li + #thirditem {
+	background: green;
+  }

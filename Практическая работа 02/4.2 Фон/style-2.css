@@ -1,0 +1,9 @@
+body {
+    background-image: url('mosaic.jpg');
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+p {
+    color:white;
+}

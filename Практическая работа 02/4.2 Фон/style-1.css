@@ -1,0 +1,10 @@
+body {
+  background: url("mosaic.jpg") repeat fixed left;
+  background-size: contain;
+}
+
+/* background-color
+background-image
+background-repeat
+background-attachment
+background-position */
