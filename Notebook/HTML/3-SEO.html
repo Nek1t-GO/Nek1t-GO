@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main></main> <!-- main предназначен для основного контента страницы -->
+    <main hidden></main> <!-- не виден из-за атрибута hidden -->
+
+    <section></section> <!-- section создания раздела сайта. Представляет собой автономный раздел -->
+    
+    <header></header> <!-- heager представляет собой вводный контент, обычно включает лого, навигацию, форму поиска, имя автора и т.п.-->
+    
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Главная</a>
+                <a href="#">Главная</a>
+                <a href="#">Главная</a>
+            </li>
+        </ul>
+    </nav> <!-- nav обозначает главные ссылки навигации  -->
+
+    <article>
+        <h1>Forecast</h1>
+        <article>
+            <h2>29 June 2023</h2>
+            <p>
+                Today is a sunny day.
+            </p>
+        </article>
+        <article>
+            <h2>30 June 2023</h2>
+            <p>
+                Tomorrow is a rainy day.
+            </p>
+        </article>
+    </article> <!-- article предназначен для создания контента, который может быть отдельно от других страниц -->
+
+    <footer></footer> <!-- footer предназначен для создания подвала страницы -->
+
+    <address>
+        <a href="mailto: it@mail.ru">e-mail</a>
+        <br>
+        <a href="tel: +79177121172">number</a>
+    </address>
+    
+    <aside></aside> <!-- aside - представляет собой часть документа, чаще всего предтавлен в виде боковой панели, сносок или меток. -->
+
+    <figure>
+        <blockquote cite="https://blog.hubspot.com/sales/famous-quotes">
+            <p> The way to get started it to quit talking and begin doing. </p>
+        </blockquote>
+
+        <figcaption>
+            Walt Disney
+            <cite>blog.hubspot.com</cite>
+        </figcaption>
+    </figure> <!-- figure - предназначен для создания графического контента -->
+    <details>
+        <summary>
+            Click to expand
+        </summary> <!-- summary - предназначен для создания заголовка раскрывающегося блока -->
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul> <!-- ul>li*3{$} -->
+    </details> <!-- details - нативный аккордеон. Предназначен для создания раскрывающихся блоков и используется для раскрытия скрытой информации -->
+    <figcaption></figcaption> <!-- figcaption - предназначен для создания подписи к графическому контенту -->
+    <div></div> <!-- div - это контейнер, который может содержать другие элементы -->
+   
+
+    <p>
+        Cемантика в <code>HTML</code> - это способ использования различных тегов HTML для описания содержимого веб-страницы и его структуры.
+        <time datetime="2023-06-29">29 June</time>
+    </p>
+    <form action="">
+        <label for="">Type your name</label>
+        <input type="">
+    </form> <!-- form - предназначен для создания формы -->
+
+    <form action="">
+        <fieldset>
+            <legend>Login</legend>
+            <input type="radio" name="" id="">
+            <label for="">Matrix 1</label>
+            <input type="radio" name="" id="">
+            <label for="">Matrix 2</label>
+            <input type="radio" name="" id="">
+            <label for="">Matrix 3</label>
+        </fieldset> <!-- fieldset - предназначен для создания группы связанных элементов формы -->
+    </form>
+
+    <dialog>
+        <p>Hello everyone!</p>
+        <form method="dialog">
+            <button type="button">ok</button>
+            <input type="submit" value="submit">
+        </form>
+    </dialog> <!-- dialog - предназначен для создания диалогового окна -->
+    <dl>
+        <dt>Тигр</dt>
+        <dd>
+            <p>Тигр — самая <mark>крупная</mark> кошка.</p>
+        </dd>
+    </dl>
+</body>
+</html>
