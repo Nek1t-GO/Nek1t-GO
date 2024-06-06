@@ -1,0 +1,22 @@
+.button-container {
+    position: fixed;
+    width: 100px; /* Ширина кнопок */
+    height: 50px; /* Высота кнопок */
+    background: linear-gradient(135deg, #8A2BE2, #007bff); /* Градиентный фон */
+    text-align: center;
+    line-height: 50px; /* Выравнивание по вертикали */
+    font-family: Arial, sans-serif;
+    
+}
+
+.bottom-left {
+    bottom: 20px; /* Отступ снизу */
+    left: 30px; /* Отступ слева */
+    border-radius: 16px 16px 16px 16px; /* Закругление левого нижнего угла */
+}
+
+.bottom-right {
+    bottom: 20px; /* Отступ снизу */
+    right: 30px; /* Отступ слева */
+    border-radius: 16px 16px 16px 16px; /* Закругление левого нижнего угла */
+}

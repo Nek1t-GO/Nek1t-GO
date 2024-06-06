@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta charset="utf-8"> <!-- Установка кодировки для страницы -->
+     <title>Documents</title> <!-- Заголовок страницы -->
+     <link rel="stylesheet">
+     <!-- Подключение Bootstrap для стилизации -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />		
+     <!-- Подключение React -->
+     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+     <!-- Подключение ReactDOM -->
+  	 <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+     <!-- Подключение Babel для преобразования JSX в JavaScript -->
+     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+   </head>
+   <body>
+        <!-- Контейнер, в который будет рендериться React-компонент -->
+        <div id="myDiv"></div>
+        <script type="text/babel"> <!-- Используем Babel для преобразования JSX -->
+            // Объект с данными для карточки
+            const data = {
+                image: "Dylan.png", // Изображение для карточки
+                cardTitle: "Bob Dylan", // Заголовок карточки
+                cardDescription: "Bob Dylan (born Robert Allen Zimmerman, May 24, 1941) is an American singer/songwriter, author, and artist who has been an influential figure in popular music and culture for more than five decades.", // Описание карточки
+                button: {
+                  url: "https://en.wikipedia.org/wiki/Bob_Dylan", // URL для кнопки
+                  label: "Go to wikipedia" // Текст на кнопке
+                }
+            };
+
+            // JSX-элемент, представляющий карточку с использованием данных
+            const output = <div className="card m-5 w-25"> {/* Используем className вместо class для атрибута класса в React */}
+                <img src={data.image} className="card-img-top" alt="Card image cap"/> {/* Изображение карточки */}
+                <div className="card-body">
+                    <h5 className="card-title">{data.cardTitle}</h5> {/* Заголовок карточки */}
+                    <p className="card-text">{data.cardDescription}</p> {/* Текст карточки */}
+                    <a href={data.button.url} className="btn btn-primary">{data.button.label}</a> {/* Кнопка со ссылкой */}
+                </div>
+            </div>;
+
+            // Рендеринг JSX-элемента в контейнер с id "myDiv"
+            ReactDOM.render(output, document.querySelector("#myDiv"));
+        </script>
+   </body>
+</html>
