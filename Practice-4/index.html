@@ -9,15 +9,20 @@
 <body>
     <h1>Крестики & Нолики</h1>
     <div>
+        <!-- Поле ввода для размера доски -->
         <label for="board-size">Размер доски:</label>
         <input type="number" id="board-size" value="3" min="3" max="10">
+        <!-- Кнопка для начала игры -->
         <button onclick="startGame()">Начать игру</button>
     </div>
     <div id="scoreboard">
+        <!-- Отображение счета игроков -->
         <span>Игрок за X: <span id="score-x">0</span></span>
         <span>Игрок за O: <span id="score-o">0</span></span>
     </div>
+    <!-- Элемент для игровой доски -->
     <div id="game-board"></div>
+    <!-- Подключение файла скрипта -->
     <script src="script.js"></script>
 </body>
 </html>

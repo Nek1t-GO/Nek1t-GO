@@ -1,33 +1,37 @@
+/* Стили для элемента body */
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 20px;
+    display: flex; /* Устанавливаем флекс-контейнер */
+    flex-direction: column; /* Размещаем элементы по вертикали */
+    align-items: center; /* Центрируем элементы по горизонтали */
+    font-family: Arial, sans-serif; /* Устанавливаем шрифт */
+    background-color: #f0f0f0; /* Задаем цвет фона */
+    margin: 0; /* Убираем отступы */
+    padding: 20px; /* Добавляем внутренние отступы */
 }
 
+/* Стили для игрового поля */
 #game-board {
-    display: grid;
-    gap: 5px;
-    margin-top: 20px;
+    display: grid; /* Устанавливаем грид-контейнер */
+    gap: 5px; /* Задаем расстояние между ячейками */
+    margin-top: 20px; /* Добавляем отступ сверху */
 }
 
+/* Стили для каждой ячейки */
 .cell {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    cursor: pointer;
+    width: 60px; /* Ширина ячейки */
+    height: 60px; /* Высота ячейки */
+    display: flex; /* Устанавливаем флекс-контейнер */
+    align-items: center; /* Центрируем элементы по вертикали */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    font-size: 2em; /* Размер шрифта */
+    background-color: #fff; /* Цвет фона ячейки */
+    border: 1px solid #ccc; /* Граница ячейки */
+    cursor: pointer; /* Курсор в виде руки при наведении */
 }
 
+/* Стили для табло с результатами */
 #scoreboard {
-    margin-top: 10px;
-    display: flex;
-    gap: 20px;
+    margin-top: 10px; /* Добавляем отступ сверху */
+    display: flex; /* Устанавливаем флекс-контейнер */
+    gap: 20px; /* Задаем расстояние между элементами */
 }
